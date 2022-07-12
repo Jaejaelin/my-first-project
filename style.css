@@ -1,1 +1,18 @@
-
+    .nav {
+      height: 70px;
+      width: 1200px;
+      border-bottom: 2px solid black;
+      display: flex;
+      margin: auto;
+    }
+    
+    .nav-left-items {
+      display: flex;
+      margin-right: auto;
+      margin-top: 38px;
+    }
+    
+    .nav-item {
+      margin-right: 18px;
+      font-size: 1.1rem;
+    }
