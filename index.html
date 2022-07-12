@@ -105,6 +105,22 @@
     
  
   </style>
+  
+    
+  
+  <script>
+    var today= new Date();
+    
+    var year=today.getFullyear();
+    var month=('0'+(today.getmonth()+1)).slice(-2);
+    var day=('0'+today.getDate()).slice(-2);
+    
+    var dateString=year+'-'+month+'-'+day;
+    document.write(today);
+  </script>
+
+   
+  
 </head>
 
 <body>
@@ -149,21 +165,7 @@
       </div>
     </div>
   
-  
-  
-  <script>
-    var today= new Date();
-    
-    var year=today.getFullyear();
-    var month=('0'+(today.getmonth()+1)).slice(-2);
-    var day=('0'+today.getDate()).slice(-2);
-    
-    var dateString=year+'-'+month+'-'+day;
-    document.write(today);
-  </script>
 
-   
-  
   
 </body>
 </html>
