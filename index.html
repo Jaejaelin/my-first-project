@@ -70,7 +70,25 @@
     
     var todayYear= today.getFullYear();
     var todayMonth= today.getMonth()+1;
+    var todayDate= today.getDate();
     var todayDay= today.getDay();
+    
+    switch(todayDay){
+      case 0 : todayDay="Mon";
+      break;
+      case 1 : todayMonth="Tue";
+      break;    
+      case 2 : todayMonth="Wed";
+      break;        
+      case 3 : todayMonth="Thu";
+      break;   
+      case 4 : todayMonth="Fri";
+      break;        
+      case 5 : todayMonth="Sat";
+      break;        
+      case 6 : todayMonth="Sun";
+      break;   
+    }
     
     switch(todayMonth){
       case 1 : todayMonth="Jan";
@@ -99,7 +117,7 @@
       break;         
     }
     
-    document.getElementById("showdate").innerHTML+= todayDay + " / " + todayMonth + " / " + todayYear;
+    document.getElementById("showdate").innerHTML+= todayDay + "/" + todayDate + " / " + todayMonth + " / " + todayYear;
     
  
   </script>
