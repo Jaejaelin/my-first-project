@@ -12,6 +12,11 @@
       margin-right: auto;
       margin-top: 38px;
     }
+
+    .nav-right-items{
+      margin-left: auto;
+      margin-top: 38px;
+    }
     
     .nav-item {
       margin-right: 18px;
