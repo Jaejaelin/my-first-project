@@ -44,7 +44,7 @@
       </div>
     </div>
     <div class="nav-right-items">
-      <span id="today"></span>
+      <span id="showdate"></span>
     </div>
   </div>
   <div class="main">
@@ -97,14 +97,16 @@
   
   <script type="text/javascript">
     
-    var inputDate=document.getElementById("today");
-    var date= new Date();
+    var inputDate=document.getElementById("showdate");
+    var today= new Date();
     
-    var year= date.getFullyear();
-    var month= ('0'+(date.getMonth()+1)).slice(-2);
-    var day= ('0'+today.getDate()).slice(-2);
+    var todayYear= today.getFullyear();
+    var todayMonth= today.getMonth()+1;
+    var todayDate= today.getDate();
+    
+    var todayString= todayDate + "/" + todayMonth + "/" + todayYear;
         
-    inputDate.innerHTML += "date: " + date.toLocaleDateString()+"<br/>";
+    inputDate.innerHTML += todayString() +"<br/>";
  
   </script>
   
