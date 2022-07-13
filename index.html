@@ -72,21 +72,31 @@
     var todayMonth= today.getMonth()+1;
     var todayDay= today.getDay();
     
-    switch(todayDay){
-      case 0 : todayDay="Mon";
+    switch(todayMonth){
+      case 0 : todayMonth="Jan";
       break;
-      case 1 : todayDay="Tue";
+      case 1 : todayMonth="Feb";
       break;    
-      case 2 : todayDay="Wed";
+      case 2 : todayMonth="Mar";
       break;        
-      case 3 : todayDay="Thu";
+      case 3 : todayMonth="Apr";
       break;   
-      case 4 : todayDay="Fri";
+      case 4 : todayMonth="May";
       break;        
-      case 5 : todayDay="Sat";
+      case 5 : todayMonth="Jun";
       break;        
-      case 6 : todayDay="Sun";
-      break;        
+      case 6 : todayMonth="Jul";
+      break;   
+      case 7 : todayMonth="Aug";
+      break;         
+      case 8 : todayMonth="Sep";
+      break;         
+      case 9 : todayMonth="Oct";
+      break;         
+      case 10 : todayMonth="Nov";
+      break;         
+      case 11 : todayMonth="Dec";
+      break;         
     }
     
     document.getElementById("showdate").innerHTML+= todayDay + " / " + todayMonth + " / " + todayYear;
