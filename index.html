@@ -99,6 +99,11 @@
     
     var inputDate=document.getElementById("today");
     var date= new Date();
+    
+    var year= date.getFullyear();
+    var month= ('0'+(date.getMonth()+1)).slice(-2);
+    var day= ('0'+today.getDate()).slice(-2);
+        
     inputDate.innerHTML += "date: " + date.toLocaleDateString()+"<br/>";
  
   </script>
