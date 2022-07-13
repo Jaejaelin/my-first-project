@@ -74,18 +74,30 @@
       </div>
     </div>
   
+  <span id="today"></span>
+  
   <!--
     <script src="main.js"></script>
-  -->
+
   
   <script type="text/javascript">
     
-    let today= new Date();
-    let year= today.getFullyear();
-    let month= today.getMonth()+1;
-    let date= today.getDate();
+    let date= new Date();
+    let year= date.getFullyear();
+    let month= date.getMonth()+1;
+    let date= date.getDate();
 
     document.write('오늘의 날짜 : '+year+'년 '+month+'월 '+date+'일')
+  </script>
+  
+  -->
+  
+  
+  <script type="text/javascript">
+    
+    var inputDate=document.getElementById("today");
+    var date= new Date();
+    inputDate.innerHTML += "date: " + date.toLocaleDateString()+"<br/>";
  
   </script>
   
