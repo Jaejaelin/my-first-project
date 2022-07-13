@@ -10,24 +10,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap');
     
   </style>
-  <!--
-  <script>
-    
- 
-    var today= new Date();
-    
-    var year=today.getFullyear();
-    var month=('0'+(today.getmonth()+1)).slice(-2);
-    var day=('0'+today.getDate()).slice(-2);
-    
-    var dateString=year+'-'+month+'-'+day;
-    document.write(today);
 
-    
-    var a= new Date();
-    document.write(a+"<br>");
-  </script>
-  -->
 
 </head>
 
@@ -78,22 +61,6 @@
     </div>
   
   
-  <!--
-    <script src="main.js"></script>
-
-  
-  <script type="text/javascript">
-    
-    let date= new Date();
-    let year= date.getFullyear();
-    let month= date.getMonth()+1;
-    let date= date.getDate();
-
-    document.write('오늘의 날짜 : '+year+'년 '+month+'월 '+date+'일')
-  </script>
-  
-  -->
-  
   
   <script type="text/javascript">
     
@@ -103,15 +70,26 @@
     
     var todayYear= today.getFullYear();
     var todayMonth= today.getMonth()+1;
-    var todayDate= today.getDate();
+    var todayDay= today.getDay();
     
-    /*
-    var todayString= todayDate + "/" + todayMonth + "/" + todayYear;
-    inputDate.innerHTML += todayString() +"<br/>";  
-    -->
-    */
+    switch(todayDay){
+      case 0 : todayDay="Mon";
+      break;
+      case 1 : todayDay="Tue";
+      break;    
+      case 2 : todayDay="Wed";
+      break;        
+      case 3 : todayDay="Thu";
+      break;   
+      case 4 : todayDay="Fri";
+      break;        
+      case 5 : todayDay="Sat";
+      break;        
+      case 6 : todayDay="Sun";
+      break;        
+    }
     
-    document.getElementById("showdate").innerHTML+= todayDate + " / " + todayMonth + " / " + todayYear;
+    document.getElementById("showdate").innerHTML+= todayDay + " / " + todayMonth + " / " + todayYear;
     
  
   </script>
