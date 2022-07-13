@@ -2,7 +2,7 @@
     .nav {
       height: 70px;
       width: 1200px;
-      border-bottom: 2px solid black;
+      border-bottom: 2px solid gray;
       display: flex;
       margin: auto;
     }
